@@ -1,4 +1,6 @@
 import { createNewDiv, addHElement } from "./DOMlogic";
+import closeBtn from "../assets/close-icon.png";
+import menuIcon from "../assets/menu-icon-white.png";
 
 const menuDropDown = () => {
   createNewDiv("menuOptions", "menuButton");
@@ -31,6 +33,7 @@ const menuDropDown = () => {
 
 const toggleMenuDisplay = () => {
   let allMenuButtons = document.querySelectorAll(".menuButtons");
+  let img = document.getElementById("burgerMenu");
   allMenuButtons.forEach((button) => {
     if (button.style.display === "none" || button.style.display === "") {
       button.style.display = "block";
@@ -38,6 +41,15 @@ const toggleMenuDisplay = () => {
       button.style.display = "none";
     }
   });
+  if (img.classList.contains("burger")) {
+    img.src = closeBtn;
+    img.classList.remove("burger");
+    img.classList.add("close");
+  } else {
+    img.src = menuIcon;
+    img.classList.remove("close");
+    img.classList.add("burger");
+  }
 };
 
 export { menuDropDown, toggleMenuDisplay };
