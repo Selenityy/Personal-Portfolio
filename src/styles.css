@@ -87,6 +87,7 @@ body {
       ". menu";
     align-items: center;
     padding: 3px;
+    /* position: fixed; */
   }
 
   #menuButton {
@@ -145,6 +146,7 @@ body {
   #mobileMainContent {
     padding-top: 70px;
     padding-left: 3px;
+    overflow: scroll;
   }
 
   #mainContentHome {
@@ -168,6 +170,7 @@ body {
     margin: 0px;
     padding-left: 5px;
     align-self: end;
+    font-family: "PoppinsMedium";
   }
 
   #homeJob {
@@ -175,6 +178,7 @@ body {
     margin: 0px;
     padding-left: 5px;
     align-self: start;
+    font-family: "PoppinsReg";
   }
 }
 
