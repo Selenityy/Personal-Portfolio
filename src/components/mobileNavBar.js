@@ -1,17 +1,27 @@
 import menuIcon from "../assets/menu-icon.png";
-import { createNewDiv, createImg } from "./DOMlogic";
+import { addHElement, createNewDiv } from "./DOMlogic";
+import { menuDropDown, toggleMenuDisplay } from "./mobileNavMenuDropDown";
 
 const createMobileNavBar = () => {
   createNewDiv("mobileNavBar", "container");
   let parentDiv = document.getElementById("mobileNavBar");
 
+  let button = document.createElement("button");
+  button.setAttribute("id", "menuButton");
   let img = document.createElement("img");
+  img.setAttribute("id", "burgerMenu");
   img.src = menuIcon;
-  parentDiv.appendChild(img);
+  button.appendChild(img);
+  parentDiv.appendChild(button);
 
-  let h2Element = document.createElement("h2");
-  h2Element.textContent = "Selena Rodriguez";
-  parentDiv.appendChild(h2Element);
+  addHElement("h2", "mobileNavBar", "myName", "Selena Rodriguez");
+
+  menuDropDown();
+
+  button.onclick = function (e) {
+    e.preventDefault();
+    toggleMenuDisplay();
+  };
 };
 
 export { createMobileNavBar };
