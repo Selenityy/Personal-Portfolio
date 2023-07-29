@@ -1,4 +1,4 @@
-import { createNewDiv, addHElement } from "./DOMlogic";
+import { createNewDiv } from "./DOMlogic";
 import closeBtn from "../assets/close-icon.png";
 import menuIcon from "../assets/menu-icon-white.png";
 
@@ -23,6 +23,12 @@ const menuDropDown = () => {
   projectsButton.setAttribute("class", "menuButtons");
   projectsButton.textContent = "Projects";
   parentDiv.appendChild(projectsButton);
+
+  let resumeButton = document.createElement("button");
+  resumeButton.setAttribute("id", "resumeButton");
+  resumeButton.setAttribute("class", "menuButtons");
+  resumeButton.textContent = "Resume";
+  parentDiv.appendChild(resumeButton);
 
   let contactButton = document.createElement("button");
   contactButton.setAttribute("id", "contactButton");
