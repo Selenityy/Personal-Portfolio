@@ -29,16 +29,152 @@ body {
 /* Media Queries for Responsive Design */
 /* Very Small Mobile Phones (Portrait) */
 @media (max-width: 320px) {
-  /* Styles for very small mobile phones go here */
+  @font-face {
+    font-family: "PoppinsThin";
+    src: url("./assets/fonts/Poppins-Thin.woff");
+  }
+
+  @font-face {
+    font-family: "PoppinsLight";
+    src: url("./assets/fonts/Poppins-Light.woff");
+  }
+
+  @font-face {
+    font-family: "PoppinsReg";
+    src: url("./assets/fonts/Poppins-Regular.woff");
+  }
+
+  @font-face {
+    font-family: "PoppinsMedium";
+    src: url("./assets/fonts/Poppins-Medium.woff");
+  }
+
+  @font-face {
+    font-family: "PoppinsSemiBold";
+    src: url("./assets/fonts/Poppins-SemiBold.woff");
+  }
+
+  @font-face {
+    font-family: "PoppinsBold";
+    src: url("./assets/fonts/Poppins-Bold.woff");
+  }
+
+  @font-face {
+    font-family: "PoppinsBlack";
+    src: url("./assets/fonts/Poppins-Black.woff");
+  }
 
   /* Adjust margins or padding for a more compact layout */
   #container {
     margin: 5px;
   }
 
-  /* Modify font sizes for very small screens */
   body {
     font-size: 13px;
+    background-image: url("./assets/pastel-background-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+  }
+
+  #mobileNavBar {
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "title menu"
+      ". menu";
+    align-items: center;
+    padding: 3px;
+  }
+
+  #menuButton {
+    grid-area: menu;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: transparent;
+  }
+
+  #burgerMenu {
+    display: grid;
+    padding-bottom: 5px;
+  }
+
+  .burger {
+    width: 25px;
+  }
+
+  .close {
+    width: 15px;
+  }
+
+  #myName {
+    grid-area: title;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    font-size: 20px;
+    font-family: "PoppinsBold";
+    color: white;
+  }
+
+  #menuOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menuButtons {
+    display: none;
+    border-style: none;
+    padding: 0px;
+    background-color: transparent;
+    font-family: "PoppinsSemiBold";
+    font-size: 13px;
+    color: white;
+  }
+
+  .menuButtons:hover,
+  .menuButtons:active {
+    color: black;
+  }
+
+  #mobileMainContent {
+    padding-top: 70px;
+    padding-left: 3px;
+  }
+
+  #mainContentHome {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto min-content;
+    grid-template-areas:
+      "pic name"
+      "pic job";
+    align-items: center;
+  }
+
+  #profilePic {
+    width: 175px;
+    grid-area: pic;
+    align-content: center;
+  }
+
+  #homeName {
+    grid-area: name;
+    margin: 0px;
+    padding-left: 5px;
+    align-self: end;
+  }
+
+  #homeJob {
+    grid-area: job;
+    margin: 0px;
+    padding-left: 5px;
+    align-self: start;
   }
 }
 
@@ -57,7 +193,7 @@ body {
   /* Styles for tablets and small laptops go here */
 
   #container {
-    margin: 20px; 
+    margin: 20px;
   }
 
   /* You can modify the layout of elements for tablets */
