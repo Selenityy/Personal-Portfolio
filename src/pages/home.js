@@ -1,4 +1,4 @@
-import { addHElement, createImg, createNewDiv } from "../components/DOMlogic";
+import { addHElement } from "../components/DOMlogic";
 import profilePic from "../assets/star-guardian.png";
 
 const homeSection = () => {
