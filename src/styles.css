@@ -1,0 +1,105 @@
+/* CSS Reset or Normalize (Optional, but recommended) */
+
+/* Set a consistent box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles from ul and ol elements */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Basic Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Queries for Responsive Design */
+/* Very Small Mobile Phones (Portrait) */
+@media (max-width: 320px) {
+  /* Styles for very small mobile phones go here */
+
+  /* Adjust margins or padding for a more compact layout */
+  #container {
+    margin: 5px;
+  }
+
+  /* Modify font sizes for very small screens */
+  body {
+    font-size: 13px;
+  }
+}
+
+/* Regular Mobile Phones (Portrait) */
+@media (min-width: 321px) and (max-width: 767px) {
+  /* Styles for regular mobile phones go here */
+
+  /* Adjust margins or padding for a more compact layout */
+  #container {
+    margin: 10px;
+  }
+}
+
+/* Tablets and Small Laptops (Portrait and Landscape) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets and small laptops go here */
+
+  #container {
+    margin: 20px; 
+  }
+
+  /* You can modify the layout of elements for tablets */
+  .sidebar {
+    display: block; /* Display the sidebar as a block on larger screens */
+    width: 30%; /* Set a specific width for the sidebar */
+    float: left; /* Float the sidebar to the left */
+  }
+
+  .main-content {
+    width: 70%; /* Set a specific width for the main content area */
+    float: right; /* Float the main content to the right */
+  }
+
+  /* You can also change font sizes or other styles for tablets */
+  .section-title {
+    font-size: 24px; /* Increase the font size for section titles */
+  }
+}
+
+/* Standard Laptops and Desktops */
+@media (min-width: 1024px) {
+  /* Styles for laptops and desktops go here */
+
+  .container {
+    max-width: 960px; /* Set a maximum width for the container on larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  /* You can further adjust the layout for larger screens */
+  .sidebar {
+    width: 25%; /* Set a specific width for the sidebar */
+    float: left;
+  }
+
+  .main-content {
+    width: 75%; /* Set a specific width for the main content area */
+    float: right;
+  }
+
+  /* You may want to revert or adjust font sizes for desktops */
+  .section-title {
+    font-size: 28px; /* Increase the font size for section titles */
+  }
+}
