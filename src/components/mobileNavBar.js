@@ -1,4 +1,4 @@
-import menuIcon from "../assets/menu-icon.png";
+import menuIcon from "../assets/menu-icon-white.png";
 import { addHElement, createNewDiv } from "./DOMlogic";
 import { menuDropDown, toggleMenuDisplay } from "./mobileNavMenuDropDown";
 
@@ -10,6 +10,7 @@ const createMobileNavBar = () => {
   button.setAttribute("id", "menuButton");
   let img = document.createElement("img");
   img.setAttribute("id", "burgerMenu");
+  img.setAttribute("class", "burger");
   img.src = menuIcon;
   button.appendChild(img);
   parentDiv.appendChild(button);
