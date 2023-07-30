@@ -8,8 +8,8 @@ const homeSection = () => {
   profilePicImg.src = profilePic;
   parentDiv.appendChild(profilePicImg);
 
-  addHElement("h2", "mainContentHome", "homeName", "Selena Rodriguez");
-  addHElement("h5", "mainContentHome", "homeJob", "Front End Developer");
+  addHElement("h1", "mainContentHome", "homeName", "Selena Rodriguez");
+  addHElement("h4", "mainContentHome", "homeJob", "Front End Developer");
 };
 
 export { homeSection };
