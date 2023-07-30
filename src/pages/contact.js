@@ -1,6 +1,7 @@
 import { addHElement, createNewDiv } from "../components/DOMlogic";
 import gitHubLogo from "../assets/Logos/github-mark.png";
 import linkedInLogo from "../assets/Logos/linkedin-logo.png";
+import { createForm } from "../components/form";
 
 const contactSection = () => {
   let parentDiv = document.getElementById("mainContentContact");
@@ -16,8 +17,11 @@ const contactSection = () => {
     "If you have any opportunities or questions, please leave your details below."
   );
 
+  // CONTACT FORM
   createNewDiv("contactForm", "mainContentContact");
+  createForm();
 
+  // GITHUB & LINKEDIN LOGOS
   createNewDiv("contactLogoIcons", "mainContentContact");
   let logos = document.getElementById("contactLogoIcons");
 
