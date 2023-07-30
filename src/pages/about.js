@@ -1,6 +1,4 @@
 import { addHElement, createNewDiv } from "../components/DOMlogic";
-import gitHubPNG from "../assets/Logos/github-mark.png";
-import linkedInPNG from "../assets/Logos/linkedin-logo.png";
 
 const aboutSection = () => {
   let parentDiv = document.getElementById("mainContentAbout");
@@ -26,18 +24,6 @@ const aboutSection = () => {
 
   createNewDiv("aboutLogoIcons", "mainContentAbout");
   let logos = document.getElementById("aboutLogoIcons");
-
-  let gitHubLogo = document.createElement("img");
-  gitHubLogo.setAttribute("class", "aboutLogos");
-  gitHubLogo.setAttribute("id", "gitHub");
-  gitHubLogo.src = gitHubPNG;
-  logos.appendChild(gitHubLogo);
-
-  let linkedInLogo = document.createElement("img");
-  linkedInLogo.setAttribute("class", "aboutLogos");
-  linkedInLogo.setAttribute("id", "linkedIn");
-  linkedInLogo.src = linkedInPNG;
-  logos.appendChild(linkedInLogo);
 };
 
 export { aboutSection };

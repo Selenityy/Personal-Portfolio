@@ -211,12 +211,12 @@ body {
     font-family: "PoppinsReg";
   }
 
-  .aboutLogos {
+  .contactLogos {
     width: 30px;
   }
 
   #linkedIn {
-      opacity: 80%;
+    opacity: 80%;
   }
 }
 
