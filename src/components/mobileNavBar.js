@@ -15,7 +15,7 @@ const createMobileNavBar = () => {
   button.appendChild(img);
   parentDiv.appendChild(button);
 
-  addHElement("h2", "mobileNavBar", "myName", "Selena Rodriguez");
+  addHElement("h2", "mobileNavBar", "myName", "Selena R. Portfolio");
 
   menuDropDown();
 
