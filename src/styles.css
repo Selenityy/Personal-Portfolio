@@ -211,6 +211,10 @@ body {
     font-family: "PoppinsReg";
   }
 
+  .languageLogos {
+    width: 30px;
+  }
+
   .contactLogos {
     width: 30px;
   }
