@@ -168,7 +168,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
 
   #profilePic {
@@ -191,28 +191,118 @@ body {
 
   .sectionTitle {
     font-family: "PoppinsMedium";
+    margin: 0px;
+    padding-bottom: 10px;
   }
 
   #mainContentAbout {
     display: flex;
     flex-direction: column;
+    padding-bottom: 120px;
   }
 
   #aboutTextPara {
     display: flex;
     flex-direction: column;
-  }
-
-  #aboutLogoIcons {
-    display: flex;
+    padding-left: 10px;
   }
 
   .aboutText {
     font-family: "PoppinsReg";
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+
+  #aboutLogoIcons {
+    display: grid;
+    padding-top: 15px;
+    grid-template-columns: repeat(8, 36.5px);
+    grid-template-rows: min-content 18px;
+    grid-template-areas:
+      "htmlLogo cssLogo jsLogo reactLogo nodeLogo webpackLogo jestLogo npmLogo"
+      "htmlText cssText jsText reactText nodeText webpackText jestText npmText";
+    align-items: center;
+    justify-items: center;
+    gap: 2px;
   }
 
   .languageLogos {
-    width: 30px;
+    width: 25px;
+  }
+
+  .languageNames {
+    font-size: 8px;
+    font-family: "PoppinsReg";
+  }
+
+  #htmlLogo {
+    grid-area: htmlLogo;
+  }
+
+  #htmlText {
+    grid-area: htmlText;
+  }
+
+  #cssLogo {
+    grid-area: cssLogo;
+  }
+
+  #cssText {
+    grid-area: cssText;
+  }
+
+  #jsLogo {
+    grid-area: jsLogo;
+  }
+
+  #jsText {
+    grid-area: jsText;
+  }
+
+  #reactLogo {
+    grid-area: reactLogo;
+  }
+
+  #reactText {
+    grid-area: reactText;
+  }
+
+  #nodeLogo {
+    grid-area: nodeLogo;
+  }
+
+  #nodeText {
+    grid-area: nodeText;
+  }
+
+  #webpackLogo {
+    grid-area: webpackLogo;
+  }
+
+  #webpackText {
+    grid-area: webpackText;
+  }
+
+  #jestLogo {
+    grid-area: jestLogo;
+  }
+
+  #jestText {
+    grid-area: jestText;
+  }
+
+  #npmLogo {
+    grid-area: npmLogo;
+  }
+
+  #npmText {
+    grid-area: npmText;
+  }
+
+  .screenshot {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
   }
 
   .contactLogos {
