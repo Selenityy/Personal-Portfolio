@@ -13,157 +13,26 @@ const projectSection = () => {
   let projectsH2 = document.getElementById("homeProjects");
   projectsH2.setAttribute("class", "sectionTitle");
 
-  // PROJECT 1: CALCULATOR
-  createNewDiv("projectOne", "mainContentProjects");
-  let projectOne = document.getElementById("projectOne");
-  projectOne.setAttribute("class", "projects");
-
-  let calcImg = document.createElement("img");
-  calcImg.setAttribute("id", "calcImg");
-  calcImg.setAttribute("class", "screenshot");
-  calcImg.src = calcScreenshot;
-  projectOne.appendChild(calcImg);
-
-  addHElement("h4", "projectOne", "projectCalcTitle", "Calculator");
-  let calcTitle = document.getElementById("projectCalcTitle");
-  calcTitle.setAttribute("class", "titles");
-  addHElement(
-    "p",
-    "projectOne",
-    "projectCalcDescription",
-    "A simple calculator."
-  );
-  let calcDescription = document.getElementById("projectCalcDescription");
-  calcDescription.setAttribute("class", "descriptions");
-
-  createNewDiv("calcLinkButtons", "projectOne");
-  let calButtons = document.getElementById("calcLinkButtons");
-  calButtons.setAttribute("class", "projectButtons");
-
-  addBtn("liveButtonCalc", "calcLinkButtons");
-  let liveButtonCalc = document.getElementById("liveButtonCalc");
-  liveButtonCalc.setAttribute("class", "linkButtons");
-  liveButtonCalc.innerHTML = "App";
-  liveButtonCalc.addEventListener("click", function () {
-    window.location.href = "https://selenityy.github.io/Calculator/";
-  });
-
-  addBtn("repoButtonCalc", "calcLinkButtons");
-  let repoButtonCalc = document.getElementById("repoButtonCalc");
-  repoButtonCalc.setAttribute("class", "linkButtons");
-  repoButtonCalc.innerHTML = "Repo";
-  repoButtonCalc.addEventListener("click", function () {
-    window.location.href = "https://github.com/Selenityy/Calculator";
-  });
-
-  // PROJECT 2: TIC-TAC-TOE
-  createNewDiv("projectTwo", "mainContentProjects");
-  let projectTwo = document.getElementById("projectTwo");
-  projectTwo.setAttribute("class", "projects");
-
-  let ticImg = document.createElement("img");
-  ticImg.setAttribute("id", "ticImg");
-  ticImg.setAttribute("class", "screenshot");
-  ticImg.src = tictactoeScreenshot;
-  projectTwo.appendChild(ticImg);
-
-  addHElement("h4", "projectTwo", "projectTicTitle", "Tic-Tac-Toe");
-  let tictacTitle = document.getElementById("projectTicTitle");
-  tictacTitle.setAttribute("class", "titles");
-
-  addHElement("p", "projectTwo", "projectTicDescription", "Tic-Tac-Toe game.");
-  let tictacDescription = document.getElementById("projectTicDescription");
-  tictacDescription.setAttribute("class", "descriptions");
-
-  createNewDiv("ticLinkButtons", "projectTwo");
-  let tictacButtons = document.getElementById("ticLinkButtons");
-  tictacButtons.setAttribute("class", "projectButtons");
-
-  addBtn("liveButtonTic", "ticLinkButtons");
-  let liveButtonTic = document.getElementById("liveButtonTic");
-  liveButtonTic.setAttribute("class", "linkButtons");
-  liveButtonTic.innerHTML = "App";
-  liveButtonTic.addEventListener("click", function () {
-    window.location.href = "https://selenityy.github.io/Tic-Tac-Toe/";
-  });
-
-  addBtn("repoButtonTic", "ticLinkButtons");
-  let repoButtonTic = document.getElementById("repoButtonTic");
-  repoButtonTic.setAttribute("class", "linkButtons");
-  repoButtonTic.innerHTML = "Repo";
-  repoButtonTic.addEventListener("click", function () {
-    window.location.href = "https://github.com/Selenityy/Tic-Tac-Toe";
-  });
-
-  // PROJECT 3: WEATHER APP
-  createNewDiv("projectThree", "mainContentProjects");
-  let projectThree = document.getElementById("projectThree");
-  projectThree.setAttribute("class", "projects");
-
-  let weatherImg = document.createElement("img");
-  weatherImg.setAttribute("id", "weatherImg");
-  weatherImg.setAttribute("class", "screenshot");
-  weatherImg.src = weatherScreenshot;
-  projectThree.appendChild(weatherImg);
-
-  addHElement("h4", "projectThree", "projectWeatherTitle", "Weather App");
-  let weatherTitle = document.getElementById("projectWeatherTitle");
-  weatherTitle.setAttribute("class", "titles");
-
-  addHElement(
-    "p",
-    "projectThree",
-    "projectWeatherDescription",
-    "Tells you the weather."
-  );
-  let weatherDescription = document.getElementById("projectWeatherDescription");
-  weatherDescription.setAttribute("class", "descriptions");
-
-  createNewDiv("weatherLinkButtons", "projectThree");
-  let weatherButtons = document.getElementById("weatherLinkButtons");
-  weatherButtons.setAttribute("class", "projectButtons");
-
-  addBtn("liveButtonWeather", "weatherLinkButtons");
-  let liveButtonWeather = document.getElementById("liveButtonWeather");
-  liveButtonWeather.setAttribute("class", "linkButtons");
-  liveButtonWeather.innerHTML = "App";
-  liveButtonWeather.addEventListener("click", function () {
-    window.location.href = "https://selenityy.github.io/Weather_App/";
-  });
-
-  addBtn("repoButtonWeather", "weatherLinkButtons");
-  let repoButtonWeather = document.getElementById("repoButtonWeather");
-  repoButtonWeather.setAttribute("class", "linkButtons");
-  repoButtonWeather.innerHTML = "Repo";
-  repoButtonWeather.addEventListener("click", function () {
-    window.location.href = "https://github.com/Selenityy/Weather_App";
-  });
-
-  // PROJECT 4: CV APPLICATION
-  createNewDiv("projectFour", "mainContentProjects");
-  let projectFour = document.getElementById("projectFour");
-  projectFour.setAttribute("class", "projects");
+  // PROJECT 1: CV
+  createNewDiv("projectCV", "mainContentProjects");
+  let projectCV = document.getElementById("projectCV");
+  projectCV.setAttribute("class", "projects");
 
   let cvImg = document.createElement("img");
   cvImg.setAttribute("id", "cvImg");
   cvImg.setAttribute("class", "screenshot");
   cvImg.src = cvScreenshot;
-  projectFour.appendChild(cvImg);
+  projectCV.appendChild(cvImg);
 
-  addHElement("h4", "projectFour", "projectCVTitle", "CV Application");
+  addHElement("h4", "projectCV", "projectCVTitle", "CV Application");
   let cvTitle = document.getElementById("projectCVTitle");
   cvTitle.setAttribute("class", "titles");
 
-  addHElement(
-    "p",
-    "projectFour",
-    "projectCVDescription",
-    "Create your own CV."
-  );
+  addHElement("p", "projectCV", "projectCVDescription", "Create your own CV.");
   let cvDescription = document.getElementById("projectCVDescription");
   cvDescription.setAttribute("class", "descriptions");
 
-  createNewDiv("cvLinkButtons", "projectFour");
+  createNewDiv("cvLinkButtons", "projectCV");
   let cvButtons = document.getElementById("cvLinkButtons");
   cvButtons.setAttribute("class", "projectButtons");
 
@@ -185,31 +54,75 @@ const projectSection = () => {
       "https://github.com/Selenityy/Project-CV-Application/tree/main";
   });
 
-  // PROJECT 5: TO-DO
-  createNewDiv("projectFive", "mainContentProjects");
-  let projectFive = document.getElementById("projectFive");
-  projectFive.setAttribute("class", "projects");
+  // PROJECT 2: WEATHER
+  createNewDiv("projectWeather", "mainContentProjects");
+  let projectWeather = document.getElementById("projectWeather");
+  projectWeather.setAttribute("class", "projects");
+
+  let weatherImg = document.createElement("img");
+  weatherImg.setAttribute("id", "weatherImg");
+  weatherImg.setAttribute("class", "screenshot");
+  weatherImg.src = weatherScreenshot;
+  projectWeather.appendChild(weatherImg);
+
+  addHElement("h4", "projectWeather", "projectWeatherTitle", "Weather App");
+  let weatherTitle = document.getElementById("projectWeatherTitle");
+  weatherTitle.setAttribute("class", "titles");
+
+  addHElement(
+    "p",
+    "projectWeather",
+    "projectWeatherDescription",
+    "Tells you the weather."
+  );
+  let weatherDescription = document.getElementById("projectWeatherDescription");
+  weatherDescription.setAttribute("class", "descriptions");
+
+  createNewDiv("weatherLinkButtons", "projectWeather");
+  let weatherButtons = document.getElementById("weatherLinkButtons");
+  weatherButtons.setAttribute("class", "projectButtons");
+
+  addBtn("liveButtonWeather", "weatherLinkButtons");
+  let liveButtonWeather = document.getElementById("liveButtonWeather");
+  liveButtonWeather.setAttribute("class", "linkButtons");
+  liveButtonWeather.innerHTML = "App";
+  liveButtonWeather.addEventListener("click", function () {
+    window.location.href = "https://selenityy.github.io/Weather_App/";
+  });
+
+  addBtn("repoButtonWeather", "weatherLinkButtons");
+  let repoButtonWeather = document.getElementById("repoButtonWeather");
+  repoButtonWeather.setAttribute("class", "linkButtons");
+  repoButtonWeather.innerHTML = "Repo";
+  repoButtonWeather.addEventListener("click", function () {
+    window.location.href = "https://github.com/Selenityy/Weather_App";
+  });
+
+  // PROJECT 3: TODO
+  createNewDiv("projectTodo", "mainContentProjects");
+  let projectTodo = document.getElementById("projectTodo");
+  projectTodo.setAttribute("class", "projects");
 
   let toDoImg = document.createElement("img");
   toDoImg.setAttribute("id", "toDoImg");
   toDoImg.setAttribute("class", "screenshot");
   toDoImg.src = todoScreenshot;
-  projectFive.appendChild(toDoImg);
+  projectTodo.appendChild(toDoImg);
 
-  addHElement("h4", "projectFive", "projectToDoTitle", "To-Do List");
+  addHElement("h4", "projectTodo", "projectToDoTitle", "To-Do List");
   let todoTitle = document.getElementById("projectToDoTitle");
   todoTitle.setAttribute("class", "titles");
 
   addHElement(
     "p",
-    "projectFive",
+    "projectTodo",
     "projectToDoDescription",
     "Inspired by Asana."
   );
   let todoDescription = document.getElementById("projectToDoDescription");
   todoDescription.setAttribute("class", "descriptions");
 
-  createNewDiv("toDoLinkButtons", "projectFive");
+  createNewDiv("toDoLinkButtons", "projectTodo");
   let todoButtons = document.getElementById("toDoLinkButtons");
   todoButtons.setAttribute("class", "projectButtons");
 
@@ -229,24 +142,29 @@ const projectSection = () => {
     window.location.href = "https://github.com/Selenityy/To-Do-List";
   });
 
-  // PROJECT 6: RESTAURANT PAGE
-  createNewDiv("projectSix", "mainContentProjects");
-  let projectSix = document.getElementById("projectSix");
-  projectSix.setAttribute("class", "projects");
+  // PROJECT 4: RESTAURANT
+  createNewDiv("projectRestaurant", "mainContentProjects");
+  let projectRestaurant = document.getElementById("projectRestaurant");
+  projectRestaurant.setAttribute("class", "projects");
 
   let restaurantImg = document.createElement("img");
   restaurantImg.setAttribute("id", "restaurantImg");
   restaurantImg.setAttribute("class", "screenshot");
   restaurantImg.src = restaurantScreenshot;
-  projectSix.appendChild(restaurantImg);
+  projectRestaurant.appendChild(restaurantImg);
 
-  addHElement("h4", "projectSix", "projectRestaurantTitle", "Restaurant Page");
+  addHElement(
+    "h4",
+    "projectRestaurant",
+    "projectRestaurantTitle",
+    "Restaurant Page"
+  );
   let restaurantTitle = document.getElementById("projectRestaurantTitle");
   restaurantTitle.setAttribute("class", "titles");
 
   addHElement(
     "p",
-    "projectSix",
+    "projectRestaurant",
     "projectRestaurantDescription",
     "Totoro Cafe."
   );
@@ -255,7 +173,7 @@ const projectSection = () => {
   );
   restaurantDescription.setAttribute("class", "descriptions");
 
-  createNewDiv("restaurantLinkButtons", "projectSix");
+  createNewDiv("restaurantLinkButtons", "projectRestaurant");
   let restaurantButtons = document.getElementById("restaurantLinkButtons");
   restaurantButtons.setAttribute("class", "projectButtons");
 
@@ -273,6 +191,93 @@ const projectSection = () => {
   repoButtonRestaurant.innerHTML = "Repo";
   repoButtonRestaurant.addEventListener("click", function () {
     window.location.href = "https://github.com/Selenityy/Restaurant-Page";
+  });
+
+  // PROJECT 5: TIC-TAC-TOE
+  createNewDiv("projectTicTacToe", "mainContentProjects");
+  let projectTicTacToe = document.getElementById("projectTicTacToe");
+  projectTicTacToe.setAttribute("class", "projects");
+
+  let ticImg = document.createElement("img");
+  ticImg.setAttribute("id", "ticImg");
+  ticImg.setAttribute("class", "screenshot");
+  ticImg.src = tictactoeScreenshot;
+  projectTicTacToe.appendChild(ticImg);
+
+  addHElement("h4", "projectTicTacToe", "projectTicTitle", "Tic-Tac-Toe");
+  let tictacTitle = document.getElementById("projectTicTitle");
+  tictacTitle.setAttribute("class", "titles");
+
+  addHElement(
+    "p",
+    "projectTicTacToe",
+    "projectTicDescription",
+    "Tic-Tac-Toe game."
+  );
+  let tictacDescription = document.getElementById("projectTicDescription");
+  tictacDescription.setAttribute("class", "descriptions");
+
+  createNewDiv("ticLinkButtons", "projectTicTacToe");
+  let tictacButtons = document.getElementById("ticLinkButtons");
+  tictacButtons.setAttribute("class", "projectButtons");
+
+  addBtn("liveButtonTic", "ticLinkButtons");
+  let liveButtonTic = document.getElementById("liveButtonTic");
+  liveButtonTic.setAttribute("class", "linkButtons");
+  liveButtonTic.innerHTML = "App";
+  liveButtonTic.addEventListener("click", function () {
+    window.location.href = "https://selenityy.github.io/Tic-Tac-Toe/";
+  });
+
+  addBtn("repoButtonTic", "ticLinkButtons");
+  let repoButtonTic = document.getElementById("repoButtonTic");
+  repoButtonTic.setAttribute("class", "linkButtons");
+  repoButtonTic.innerHTML = "Repo";
+  repoButtonTic.addEventListener("click", function () {
+    window.location.href = "https://github.com/Selenityy/Tic-Tac-Toe";
+  });
+
+  // PROJECT 6: CALCULATOR
+  createNewDiv("projectCalc", "mainContentProjects");
+  let projectCalc = document.getElementById("projectCalc");
+  projectCalc.setAttribute("class", "projects");
+
+  let calcImg = document.createElement("img");
+  calcImg.setAttribute("id", "calcImg");
+  calcImg.setAttribute("class", "screenshot");
+  calcImg.src = calcScreenshot;
+  projectCalc.appendChild(calcImg);
+
+  addHElement("h4", "projectCalc", "projectCalcTitle", "Calculator");
+  let calcTitle = document.getElementById("projectCalcTitle");
+  calcTitle.setAttribute("class", "titles");
+  addHElement(
+    "p",
+    "projectCalc",
+    "projectCalcDescription",
+    "A simple calculator."
+  );
+  let calcDescription = document.getElementById("projectCalcDescription");
+  calcDescription.setAttribute("class", "descriptions");
+
+  createNewDiv("calcLinkButtons", "projectCalc");
+  let calButtons = document.getElementById("calcLinkButtons");
+  calButtons.setAttribute("class", "projectButtons");
+
+  addBtn("liveButtonCalc", "calcLinkButtons");
+  let liveButtonCalc = document.getElementById("liveButtonCalc");
+  liveButtonCalc.setAttribute("class", "linkButtons");
+  liveButtonCalc.innerHTML = "App";
+  liveButtonCalc.addEventListener("click", function () {
+    window.location.href = "https://selenityy.github.io/Calculator/";
+  });
+
+  addBtn("repoButtonCalc", "calcLinkButtons");
+  let repoButtonCalc = document.getElementById("repoButtonCalc");
+  repoButtonCalc.setAttribute("class", "linkButtons");
+  repoButtonCalc.innerHTML = "Repo";
+  repoButtonCalc.addEventListener("click", function () {
+    window.location.href = "https://github.com/Selenityy/Calculator";
   });
 };
 
