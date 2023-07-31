@@ -24,27 +24,34 @@ const projectSection = () => {
   calcImg.src = calcScreenshot;
   projectOne.appendChild(calcImg);
 
-  addHElement("h3", "projectOne", "projectCalcTitle", "Calculator");
+  addHElement("h4", "projectOne", "projectCalcTitle", "Calculator");
+  let calcTitle = document.getElementById("projectCalcTitle");
+  calcTitle.setAttribute("class", "titles");
   addHElement(
-    "h4",
+    "p",
     "projectOne",
     "projectCalcDescription",
     "A simple calculator."
   );
+  let calcDescription = document.getElementById("projectCalcDescription");
+  calcDescription.setAttribute("class", "descriptions");
 
   createNewDiv("calcLinkButtons", "projectOne");
+  let calButtons = document.getElementById("calcLinkButtons");
+  calButtons.setAttribute("class", "projectButtons");
+
   addBtn("liveButtonCalc", "calcLinkButtons");
   let liveButtonCalc = document.getElementById("liveButtonCalc");
-  liveButtonCalc.setAttribute("class", "calcLinkButtons");
-  liveButtonCalc.innerHTML = "Live App";
+  liveButtonCalc.setAttribute("class", "linkButtons");
+  liveButtonCalc.innerHTML = "App";
   liveButtonCalc.addEventListener("click", function () {
     window.location.href = "https://selenityy.github.io/Calculator/";
   });
 
   addBtn("repoButtonCalc", "calcLinkButtons");
   let repoButtonCalc = document.getElementById("repoButtonCalc");
-  repoButtonCalc.setAttribute("class", "calcLinkButtons");
-  repoButtonCalc.innerHTML = "Repository";
+  repoButtonCalc.setAttribute("class", "linkButtons");
+  repoButtonCalc.innerHTML = "Repo";
   repoButtonCalc.addEventListener("click", function () {
     window.location.href = "https://github.com/Selenityy/Calculator";
   });
@@ -60,22 +67,30 @@ const projectSection = () => {
   ticImg.src = tictactoeScreenshot;
   projectTwo.appendChild(ticImg);
 
-  addHElement("h3", "projectTwo", "projectTicTitle", "Tic-Tac-Toe");
-  addHElement("h4", "projectTwo", "projectTicDescription", "Tic-Tac-Toe game.");
+  addHElement("h4", "projectTwo", "projectTicTitle", "Tic-Tac-Toe");
+  let tictacTitle = document.getElementById("projectTicTitle");
+  tictacTitle.setAttribute("class", "titles");
+
+  addHElement("p", "projectTwo", "projectTicDescription", "Tic-Tac-Toe game.");
+  let tictacDescription = document.getElementById("projectTicDescription");
+  tictacDescription.setAttribute("class", "descriptions");
 
   createNewDiv("ticLinkButtons", "projectTwo");
+  let tictacButtons = document.getElementById("ticLinkButtons");
+  tictacButtons.setAttribute("class", "projectButtons");
+
   addBtn("liveButtonTic", "ticLinkButtons");
   let liveButtonTic = document.getElementById("liveButtonTic");
-  liveButtonTic.setAttribute("class", "ticLinkButtons");
-  liveButtonTic.innerHTML = "Live App";
+  liveButtonTic.setAttribute("class", "linkButtons");
+  liveButtonTic.innerHTML = "App";
   liveButtonTic.addEventListener("click", function () {
     window.location.href = "https://selenityy.github.io/Tic-Tac-Toe/";
   });
 
   addBtn("repoButtonTic", "ticLinkButtons");
   let repoButtonTic = document.getElementById("repoButtonTic");
-  repoButtonTic.setAttribute("class", "ticLinkButtons");
-  repoButtonTic.innerHTML = "Repository";
+  repoButtonTic.setAttribute("class", "linkButtons");
+  repoButtonTic.innerHTML = "Repo";
   repoButtonTic.addEventListener("click", function () {
     window.location.href = "https://github.com/Selenityy/Tic-Tac-Toe";
   });
@@ -91,27 +106,35 @@ const projectSection = () => {
   weatherImg.src = weatherScreenshot;
   projectThree.appendChild(weatherImg);
 
-  addHElement("h3", "projectThree", "projectWeatherTitle", "Weather App");
+  addHElement("h4", "projectThree", "projectWeatherTitle", "Weather App");
+  let weatherTitle = document.getElementById("projectWeatherTitle");
+  weatherTitle.setAttribute("class", "titles");
+
   addHElement(
-    "h4",
+    "p",
     "projectThree",
     "projectWeatherDescription",
     "Tells you the weather."
   );
+  let weatherDescription = document.getElementById("projectWeatherDescription");
+  weatherDescription.setAttribute("class", "descriptions");
 
   createNewDiv("weatherLinkButtons", "projectThree");
+  let weatherButtons = document.getElementById("weatherLinkButtons");
+  weatherButtons.setAttribute("class", "projectButtons");
+
   addBtn("liveButtonWeather", "weatherLinkButtons");
   let liveButtonWeather = document.getElementById("liveButtonWeather");
-  liveButtonWeather.setAttribute("class", "weatherLinkButtons");
-  liveButtonWeather.innerHTML = "Live App";
+  liveButtonWeather.setAttribute("class", "linkButtons");
+  liveButtonWeather.innerHTML = "App";
   liveButtonWeather.addEventListener("click", function () {
     window.location.href = "https://selenityy.github.io/Weather_App/";
   });
 
   addBtn("repoButtonWeather", "weatherLinkButtons");
   let repoButtonWeather = document.getElementById("repoButtonWeather");
-  repoButtonWeather.setAttribute("class", "weatherLinkButtons");
-  repoButtonWeather.innerHTML = "Repository";
+  repoButtonWeather.setAttribute("class", "linkButtons");
+  repoButtonWeather.innerHTML = "Repo";
   repoButtonWeather.addEventListener("click", function () {
     window.location.href = "https://github.com/Selenityy/Weather_App";
   });
@@ -127,19 +150,27 @@ const projectSection = () => {
   cvImg.src = cvScreenshot;
   projectFour.appendChild(cvImg);
 
-  addHElement("h3", "projectFour", "projectCVTitle", "CV Application");
+  addHElement("h4", "projectFour", "projectCVTitle", "CV Application");
+  let cvTitle = document.getElementById("projectCVTitle");
+  cvTitle.setAttribute("class", "titles");
+
   addHElement(
-    "h4",
+    "p",
     "projectFour",
     "projectCVDescription",
     "Create your own CV."
   );
+  let cvDescription = document.getElementById("projectCVDescription");
+  cvDescription.setAttribute("class", "descriptions");
 
   createNewDiv("cvLinkButtons", "projectFour");
+  let cvButtons = document.getElementById("cvLinkButtons");
+  cvButtons.setAttribute("class", "projectButtons");
+
   addBtn("liveButtonCV", "cvLinkButtons");
   let liveButtonCV = document.getElementById("liveButtonCV");
-  liveButtonCV.setAttribute("class", "cvLinkButtons");
-  liveButtonCV.innerHTML = "Live App";
+  liveButtonCV.setAttribute("class", "linkButtons");
+  liveButtonCV.innerHTML = "App";
   liveButtonCV.addEventListener("click", function () {
     window.location.href =
       "https://github.com/Selenityy/Project-CV-Application/tree/main";
@@ -147,8 +178,8 @@ const projectSection = () => {
 
   addBtn("repoButtonCV", "cvLinkButtons");
   let repoButtonCV = document.getElementById("repoButtonCV");
-  repoButtonCV.setAttribute("class", "cvLinkButtons");
-  repoButtonCV.innerHTML = "Repository";
+  repoButtonCV.setAttribute("class", "linkButtons");
+  repoButtonCV.innerHTML = "Repo";
   repoButtonCV.addEventListener("click", function () {
     window.location.href =
       "https://github.com/Selenityy/Project-CV-Application/tree/main";
@@ -165,27 +196,35 @@ const projectSection = () => {
   toDoImg.src = todoScreenshot;
   projectFive.appendChild(toDoImg);
 
-  addHElement("h3", "projectFive", "projectToDoTitle", "To-Do List");
+  addHElement("h4", "projectFive", "projectToDoTitle", "To-Do List");
+  let todoTitle = document.getElementById("projectToDoTitle");
+  todoTitle.setAttribute("class", "titles");
+
   addHElement(
-    "h4",
+    "p",
     "projectFive",
     "projectToDoDescription",
     "Inspired by Asana."
   );
+  let todoDescription = document.getElementById("projectToDoDescription");
+  todoDescription.setAttribute("class", "descriptions");
 
   createNewDiv("toDoLinkButtons", "projectFive");
+  let todoButtons = document.getElementById("toDoLinkButtons");
+  todoButtons.setAttribute("class", "projectButtons");
+
   addBtn("liveButtonToDo", "toDoLinkButtons");
   let liveButtonToDo = document.getElementById("liveButtonToDo");
-  liveButtonToDo.setAttribute("class", "toDoLinkButtons");
-  liveButtonToDo.innerHTML = "Live App";
+  liveButtonToDo.setAttribute("class", "linkButtons");
+  liveButtonToDo.innerHTML = "App";
   liveButtonToDo.addEventListener("click", function () {
     window.location.href = "https://selenityy.github.io/To-Do-List/";
   });
 
   addBtn("repoButtonToDo", "toDoLinkButtons");
   let repoButtonToDo = document.getElementById("repoButtonToDo");
-  repoButtonToDo.setAttribute("class", "toDoLinkButtons");
-  repoButtonToDo.innerHTML = "Repository";
+  repoButtonToDo.setAttribute("class", "linkButtons");
+  repoButtonToDo.innerHTML = "Repo";
   repoButtonToDo.addEventListener("click", function () {
     window.location.href = "https://github.com/Selenityy/To-Do-List";
   });
@@ -201,27 +240,37 @@ const projectSection = () => {
   restaurantImg.src = restaurantScreenshot;
   projectSix.appendChild(restaurantImg);
 
-  addHElement("h3", "projectSix", "projectRestaurantTitle", "Restaurant Page");
+  addHElement("h4", "projectSix", "projectRestaurantTitle", "Restaurant Page");
+  let restaurantTitle = document.getElementById("projectRestaurantTitle");
+  restaurantTitle.setAttribute("class", "titles");
+
   addHElement(
-    "h4",
+    "p",
     "projectSix",
     "projectRestaurantDescription",
     "Totoro Cafe."
   );
+  let restaurantDescription = document.getElementById(
+    "projectRestaurantDescription"
+  );
+  restaurantDescription.setAttribute("class", "descriptions");
 
   createNewDiv("restaurantLinkButtons", "projectSix");
+  let restaurantButtons = document.getElementById("restaurantLinkButtons");
+  restaurantButtons.setAttribute("class", "projectButtons");
+
   addBtn("liveButtonRestaurant", "restaurantLinkButtons");
   let liveButtonRestaurant = document.getElementById("liveButtonRestaurant");
-  liveButtonRestaurant.setAttribute("class", "restaurantLinkButtons");
-  liveButtonRestaurant.innerHTML = "Live App";
+  liveButtonRestaurant.setAttribute("class", "linkButtons");
+  liveButtonRestaurant.innerHTML = "App";
   liveButtonRestaurant.addEventListener("click", function () {
     window.location.href = "https://selenityy.github.io/Restaurant-Page/";
   });
 
   addBtn("repoButtonRestaurant", "restaurantLinkButtons");
   let repoButtonRestaurant = document.getElementById("repoButtonRestaurant");
-  repoButtonRestaurant.setAttribute("class", "restaurantLinkButtons");
-  repoButtonRestaurant.innerHTML = "Repository";
+  repoButtonRestaurant.setAttribute("class", "linkButtons");
+  repoButtonRestaurant.innerHTML = "Repo";
   repoButtonRestaurant.addEventListener("click", function () {
     window.location.href = "https://github.com/Selenityy/Restaurant-Page";
   });
