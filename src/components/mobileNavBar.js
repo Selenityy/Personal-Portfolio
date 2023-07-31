@@ -1,4 +1,4 @@
-import menuIcon from "../assets/menu-icon-white.png";
+import menuIcon from "../assets/menu-icon-white-2.png";
 import { addHElement, createNewDiv } from "./DOMlogic";
 import { menuDropDown, toggleMenuDisplay } from "./mobileNavMenuDropDown";
 

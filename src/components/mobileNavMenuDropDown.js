@@ -1,6 +1,6 @@
 import { createNewDiv } from "./DOMlogic";
-import closeBtn from "../assets/close-icon.png";
-import menuIcon from "../assets/menu-icon-white.png";
+import closeBtn from "../assets/close-icon-2.png";
+import menuIcon from "../assets/menu-icon-white-2.png";
 
 const menuDropDown = () => {
   createNewDiv("menuOptions", "menuButton");
