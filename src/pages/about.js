@@ -35,132 +35,108 @@ const aboutSection = () => {
   let logos = document.getElementById("aboutLogoIcons");
 
   // HTML LOGO
-  createNewDiv("htmlLogoElements", "aboutLogoIcons");
-  let htmlLogoElements = document.getElementById("htmlLogoElements");
-
   let htmlImg = document.createElement("img");
   htmlImg.setAttribute("class", "languageLogos");
   htmlImg.setAttribute("id", "htmlLogo");
   htmlImg.src = htmlLogo;
-  htmlLogoElements.appendChild(htmlImg);
+  logos.appendChild(htmlImg);
 
   let htmlText = document.createElement("p");
   htmlText.setAttribute("class", "languageNames");
   htmlText.setAttribute("id", "htmlText");
   htmlText.innerHTML = "HTML";
-  htmlLogoElements.appendChild(htmlText);
+  logos.appendChild(htmlText);
 
   // CSS LOGO
-  createNewDiv("cssLogoElements", "aboutLogoIcons");
-  let cssLogoElements = document.getElementById("cssLogoElements");
-
   let cssImg = document.createElement("img");
   cssImg.setAttribute("class", "languageLogos");
   cssImg.setAttribute("id", "cssLogo");
   cssImg.src = cssLogo;
-  cssLogoElements.appendChild(cssImg);
+  logos.appendChild(cssImg);
 
   let cssText = document.createElement("p");
   cssText.setAttribute("class", "languageNames");
   cssText.setAttribute("id", "cssText");
   cssText.innerHTML = "CSS";
-  cssLogoElements.appendChild(cssText);
+  logos.appendChild(cssText);
 
   // JS LOGO
-  createNewDiv("jsLogoElements", "aboutLogoIcons");
-  let jsLogoElements = document.getElementById("jsLogoElements");
-
   let jsImg = document.createElement("img");
   jsImg.setAttribute("class", "languageLogos");
   jsImg.setAttribute("id", "jsLogo");
   jsImg.src = jsLogo;
-  jsLogoElements.appendChild(jsImg);
+  logos.appendChild(jsImg);
 
   let jsText = document.createElement("p");
   jsText.setAttribute("class", "languageNames");
   jsText.setAttribute("id", "jsText");
   jsText.innerHTML = "Javascript";
-  jsLogoElements.appendChild(jsText);
+  logos.appendChild(jsText);
 
   // REACT LOGO
-  createNewDiv("reactLogoElements", "aboutLogoIcons");
-  let reactLogoElements = document.getElementById("reactLogoElements");
-
   let reactImg = document.createElement("img");
   reactImg.setAttribute("class", "languageLogos");
   reactImg.setAttribute("id", "reactLogo");
   reactImg.src = reactLogo;
-  reactLogoElements.appendChild(reactImg);
+  logos.appendChild(reactImg);
 
   let reactText = document.createElement("p");
   reactText.setAttribute("class", "languageNames");
   reactText.setAttribute("id", "reactText");
   reactText.innerHTML = "React";
-  reactLogoElements.appendChild(reactText);
+  logos.appendChild(reactText);
 
   // NODE LOGO
-  createNewDiv("nodeLogoElements", "aboutLogoIcons");
-  let nodeLogoElements = document.getElementById("nodeLogoElements");
-
   let nodeImg = document.createElement("img");
   nodeImg.setAttribute("class", "languageLogos");
   nodeImg.setAttribute("id", "nodeLogo");
   nodeImg.src = nodeLogo;
-  nodeLogoElements.appendChild(nodeImg);
+  logos.appendChild(nodeImg);
 
   let nodeText = document.createElement("p");
   nodeText.setAttribute("class", "languageNames");
   nodeText.setAttribute("id", "nodeText");
   nodeText.innerHTML = "Node";
-  nodeLogoElements.appendChild(nodeText);
+  logos.appendChild(nodeText);
 
   // WEBPACK LOGO
-  createNewDiv("webpackLogoElements", "aboutLogoIcons");
-  let webpackLogoElements = document.getElementById("webpackLogoElements");
-
   let webpackImg = document.createElement("img");
   webpackImg.setAttribute("class", "languageLogos");
   webpackImg.setAttribute("id", "webpackLogo");
   webpackImg.src = webpackLogo;
-  webpackLogoElements.appendChild(webpackImg);
+  logos.appendChild(webpackImg);
 
   let webpackText = document.createElement("p");
   webpackText.setAttribute("class", "languageNames");
   webpackText.setAttribute("id", "webpackText");
   webpackText.innerHTML = "Webpack";
-  webpackLogoElements.appendChild(webpackText);
+  logos.appendChild(webpackText);
 
   // JEST LOGO
-  createNewDiv("jestLogoElements", "aboutLogoIcons");
-  let jestLogoElements = document.getElementById("jestLogoElements");
-
   let jestImg = document.createElement("img");
   jestImg.setAttribute("class", "languageLogos");
   jestImg.setAttribute("id", "jestLogo");
   jestImg.src = jestLogo;
-  jestLogoElements.appendChild(jestImg);
+  logos.appendChild(jestImg);
 
   let jestText = document.createElement("p");
   jestText.setAttribute("class", "languageNames");
   jestText.setAttribute("id", "jestText");
   jestText.innerHTML = "Jest";
-  jestLogoElements.appendChild(jestText);
+  logos.appendChild(jestText);
 
   // NPM LOGO
-  createNewDiv("npmLogoElements", "aboutLogoIcons");
-  let npmLogoElements = document.getElementById("npmLogoElements");
-
   let npmImg = document.createElement("img");
   npmImg.setAttribute("class", "languageLogos");
   npmImg.setAttribute("id", "npmLogo");
   npmImg.src = npmLogo;
-  npmLogoElements.appendChild(npmImg);
+  logos.appendChild(npmImg);
 
   let npmText = document.createElement("p");
   npmText.setAttribute("class", "languageNames");
   npmText.setAttribute("id", "npmText");
   npmText.innerHTML = "NPM";
-  npmLogoElements.appendChild(npmText);
+  logos.appendChild(npmText);
 };
 
 export { aboutSection };
