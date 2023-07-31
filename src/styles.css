@@ -223,6 +223,7 @@ body {
       "htmlText cssText jsText reactText nodeText webpackText jestText npmText";
     align-items: center;
     justify-items: center;
+    justify-content: center;
     gap: 2px;
   }
 
@@ -299,10 +300,44 @@ body {
     grid-area: npmText;
   }
 
+  #mainContentProjects {
+    padding-bottom: 120px;
+  }
+
+  #homeProjects {
+    padding-bottom: 30px;
+  }
+
   .screenshot {
     width: 250px;
     height: auto;
     border-radius: 5px;
+  }
+
+  .projects {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .titles {
+    margin: 0px;
+  }
+
+  .descriptions {
+    margin: 0px;
+    font-size: 10px;
+  }
+
+  .projectButtons {
+    padding-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .linkButtons {
+    border-radius: 12px;
+    font-family: "PoppinsReg";
+    font-size: 8px;
   }
 
   .contactLogos {
