@@ -1,5 +1,5 @@
 import { addHElement } from "../components/DOMlogic";
-import profilePic from "../assets/star-guardian.png";
+import profilePic from "../assets/profile-pic.png";
 
 const homeSection = () => {
   let parentDiv = document.getElementById("mainContentHome");
