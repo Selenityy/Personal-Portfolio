@@ -6,7 +6,6 @@ createMobileNavBar();
 createMobileMainContent();
 
 let homeButton = document.getElementById("homeButton");
-let homeHElement = document.getElementById("profilePic");
 homeButton.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
@@ -51,7 +50,6 @@ resumeButton.addEventListener("click", function () {
 });
 
 let contactButton = document.getElementById("contactButton");
-let contactHElement = document.getElementById("homeContact");
 contactButton.addEventListener("click", function () {
   const bottomPosition = document.documentElement.scrollHeight;
   window.scrollTo({
