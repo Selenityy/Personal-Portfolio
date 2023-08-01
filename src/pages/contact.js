@@ -29,12 +29,18 @@ const contactSection = () => {
   gitHub.setAttribute("class", "contactLogos");
   gitHub.setAttribute("id", "gitHub");
   gitHub.src = gitHubLogo;
+  gitHub.addEventListener("click", function () {
+    window.location.href = "https://github.com/Selenityy";
+  });
   logos.appendChild(gitHub);
 
   let linkedIn = document.createElement("img");
   linkedIn.setAttribute("class", "contactLogos");
   linkedIn.setAttribute("id", "linkedIn");
   linkedIn.src = linkedInLogo;
+  linkedIn.addEventListener("click", function () {
+    window.location.href = "https://www.linkedin.com/in/selenakrodriguez/";
+  });
   logos.appendChild(linkedIn);
 };
 
