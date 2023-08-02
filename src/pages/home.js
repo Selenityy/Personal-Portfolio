@@ -6,6 +6,7 @@ const homeSection = () => {
   let profilePicImg = document.createElement("img");
   profilePicImg.setAttribute("id", "profilePic");
   profilePicImg.src = profilePic;
+//   profilePicImg.alt = "Selena Rodriguez";
   parentDiv.appendChild(profilePicImg);
 
   addHElement("h1", "mainContentHome", "homeName", "Selena Rodriguez");
