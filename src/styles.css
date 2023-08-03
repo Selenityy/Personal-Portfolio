@@ -26,49 +26,49 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: "PoppinsThin";
+  src: url("./assets/fonts/Poppins-Thin.woff");
+}
+
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("./assets/fonts/Poppins-Light.woff");
+}
+
+@font-face {
+  font-family: "PoppinsReg";
+  src: url("./assets/fonts/Poppins-Regular.woff");
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("./assets/fonts/Poppins-Medium.woff");
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url("./assets/fonts/Poppins-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("./assets/fonts/Poppins-Bold.woff");
+}
+
+@font-face {
+  font-family: "PoppinsBlack";
+  src: url("./assets/fonts/Poppins-Black.woff");
+}
+
+@font-face {
+  font-family: "CookieReg";
+  src: url("./assets//fonts/Cookie-Regular.woff");
+}
+
 /* Media Queries for Responsive Design */
 /* Very Small Mobile Phones (Portrait) */
 @media (max-width: 320px) {
-  @font-face {
-    font-family: "PoppinsThin";
-    src: url("./assets/fonts/Poppins-Thin.woff");
-  }
-
-  @font-face {
-    font-family: "PoppinsLight";
-    src: url("./assets/fonts/Poppins-Light.woff");
-  }
-
-  @font-face {
-    font-family: "PoppinsReg";
-    src: url("./assets/fonts/Poppins-Regular.woff");
-  }
-
-  @font-face {
-    font-family: "PoppinsMedium";
-    src: url("./assets/fonts/Poppins-Medium.woff");
-  }
-
-  @font-face {
-    font-family: "PoppinsSemiBold";
-    src: url("./assets/fonts/Poppins-SemiBold.woff");
-  }
-
-  @font-face {
-    font-family: "PoppinsBold";
-    src: url("./assets/fonts/Poppins-Bold.woff");
-  }
-
-  @font-face {
-    font-family: "PoppinsBlack";
-    src: url("./assets/fonts/Poppins-Black.woff");
-  }
-
-  @font-face {
-    font-family: "CookieReg";
-    src: url("./assets//fonts/Cookie-Regular.woff");
-  }
-
   /* Adjust margins or padding for a more compact layout */
   #container {
     margin: 5px;
@@ -531,11 +531,486 @@ body {
 
 /* Regular Mobile Phones (Portrait) */
 @media (min-width: 321px) and (max-width: 767px) {
-  /* Styles for regular mobile phones go here */
-
   /* Adjust margins or padding for a more compact layout */
   #container {
     margin: 10px;
+    display: grid;
+    grid-template-rows: 126px 1fr;
+    grid-template-areas:
+      "nav"
+      "main";
+  }
+
+  body {
+    font-size: 1.5rem;
+    background-image: url("./assets/pastel-background-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+  }
+
+  #mobileNavBar {
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "title menu"
+      ". menu";
+    padding: 10px 16px 10px 10px;
+    grid-area: nav;
+    /* position: sticky; */
+    top: 0px;
+    width: 100%;
+    position: fixed;
+  }
+
+  #menuButton {
+    grid-area: menu;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: transparent;
+  }
+
+  #burgerMenu {
+    display: grid;
+    padding-bottom: 5px;
+  }
+
+  .burger {
+    width: 50px;
+  }
+
+  .close {
+    width: 35px;
+  }
+
+  #menuOptions {
+    padding: 2px;
+    transform: translateY(-10%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #menuOptions.show {
+    background-color: #9595df;
+    border-radius: 5px;
+    transform: translateY(0%);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #myName {
+    grid-area: title;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    font-size: 40px;
+    font-family: "PoppinsBold";
+    color: white;
+    text-shadow: 0.5px 0.5px 1px #333;
+  }
+
+  #menuOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menuButtons {
+    display: none;
+    border-style: none;
+    padding: 0px;
+    background-color: transparent;
+    font-family: "PoppinsSemiBold";
+    font-size: 25px;
+    color: white;
+    text-shadow: 0.5px 0.5px 1px #333;
+  }
+
+  .menuButtons:hover,
+  .menuButtons:active {
+    color: #333;
+    text-shadow: none;
+  }
+
+  #mobileMainContent {
+    padding-left: 3px;
+    overflow: scroll;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mainContentHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 160px;
+  }
+
+  #profilePic {
+    width: auto;
+    height: 400px;
+    grid-area: pic;
+    align-content: center;
+    border-radius: 5px;
+    /* object-fit: cover;
+    object-position: 0% 30%; */
+  }
+
+  #homeName {
+    margin: 0px;
+    padding-left: 5px;
+    font-family: "PoppinsMedium";
+    font-size: 3.5rem;
+  }
+
+  #homeJob {
+    margin: 0px;
+    font-family: "PoppinsReg";
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-family: "PoppinsMedium";
+    margin: 0px;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+  }
+
+  #mainContentAbout {
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 120px; */
+    padding: 0px 30px 600px 20px;
+  }
+
+  #aboutTextPara {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+  }
+
+  .aboutText {
+    font-family: "PoppinsReg";
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+
+  #aboutLogoIcons {
+    display: grid;
+    padding-top: 40px;
+    grid-template-columns: repeat(8, 36.5px);
+    grid-template-rows: min-content 18px;
+    grid-template-areas:
+      "htmlLogo cssLogo jsLogo reactLogo nodeLogo webpackLogo jestLogo npmLogo"
+      "htmlText cssText jsText reactText nodeText webpackText jestText npmText";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    /* gap: 2px; */
+    column-gap: 47px;
+    row-gap: 13px;
+    padding-right: 22px;
+  }
+
+  .languageLogos {
+    width: 60px;
+  }
+
+  .languageNames {
+    font-size: 0.9rem;
+    font-family: "PoppinsReg";
+  }
+
+  #htmlLogo {
+    grid-area: htmlLogo;
+  }
+
+  #htmlText {
+    grid-area: htmlText;
+  }
+
+  #cssLogo {
+    grid-area: cssLogo;
+  }
+
+  #cssText {
+    grid-area: cssText;
+  }
+
+  #jsLogo {
+    grid-area: jsLogo;
+  }
+
+  #jsText {
+    grid-area: jsText;
+  }
+
+  #reactLogo {
+    grid-area: reactLogo;
+  }
+
+  #reactText {
+    grid-area: reactText;
+  }
+
+  #nodeLogo {
+    grid-area: nodeLogo;
+  }
+
+  #nodeText {
+    grid-area: nodeText;
+  }
+
+  #webpackLogo {
+    grid-area: webpackLogo;
+  }
+
+  #webpackText {
+    grid-area: webpackText;
+  }
+
+  #jestLogo {
+    grid-area: jestLogo;
+  }
+
+  #jestText {
+    grid-area: jestText;
+  }
+
+  #npmLogo {
+    grid-area: npmLogo;
+  }
+
+  #npmText {
+    grid-area: npmText;
+  }
+
+  #mainContentProjects {
+    /* padding-bottom: 120px; */
+    padding: 0px 30px 300px 20px;
+  }
+
+  #homeProjects {
+    padding-bottom: 30px;
+  }
+
+  .screenshot {
+    width: auto;
+    height: 250px;
+    border-radius: 5px;
+  }
+
+  .projects {
+    /* padding-left: 10px;
+    padding-bottom: 10px; */
+    padding: 0px 10px 60px 35px;
+  }
+
+  .titles {
+    margin: 0px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+  }
+
+  .descriptions {
+    margin: 0px;
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+
+  .projectButtons {
+    /* padding-bottom: 20px;
+    padding-left: 2px; */
+    display: flex;
+    gap: 30px;
+    padding: 6px 10px 0px 5px;
+  }
+
+  .linkButtons,
+  #submitBtn {
+    border-radius: 20px;
+    font-family: "PoppinsMedium";
+    font-size: 1.1rem;
+    border: 0.5px solid #333;
+    background-color: #9595df;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 5px 20px 5px 20px;
+  }
+
+  .linkButtons:hover,
+  .linkButtons:active,
+  #submitBtn:hover,
+  #submitBtn:active {
+    background-color: #333;
+    box-shadow: none;
+  }
+
+  .linkButtons:active {
+    transform: translateY(2px);
+  }
+
+  #mainContentResume {
+    /* padding-bottom: 120px; */
+    padding: 0px 30px 300px 20px;
+  }
+
+  h4#resumeEdu.resumeHeaders {
+    padding-bottom: 20px;
+  }
+
+  h4#resumeEdu.resumeHeaders,
+  h4#resumeExp.resumeHeaders {
+    margin: 0px;
+    padding-left: 20px;
+    font-size: 1.7rem;
+    font-family: "PoppinsMedium";
+  }
+
+  /* ul#schoolName.resumeHeaders {
+    margin: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  } */
+
+  ul#schoolName.school {
+    padding-left: 20px;
+    font-size: 1.3rem;
+    font-family: "PoppinsReg";
+  }
+
+  li#schoolDegree.school {
+    font-size: 1.2rem;
+  }
+
+  li#schoolLocation.school,
+  li#schoolYrs.school {
+    font-size: 0.9rem;
+    font-family: "PoppinsLight";
+  }
+
+  .jobGroup {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    /* padding-top: 10px; */
+    font-family: "PoppinsReg";
+  }
+
+  li#jobOneTitle.jobWhereBullets,
+  li#jobTwoTitle.jobWhereBullets,
+  li#jobThreeTitle.jobWhereBullets,
+  li#jobFourTitle.jobWhereBullets {
+    font-size: 1.3rem;
+  }
+
+  li#jobOneCompany.jobWhereBullets,
+  li#jobTwoCompany.jobWhereBullets,
+  li#jobThreeCompany.jobWhereBullets,
+  li#jobFourCompany.jobWhereBullets {
+    font-size: 1rem;
+  }
+
+  li#jobOneLocation.jobWhereBullets,
+  li#jobTwoLocation.jobWhereBullets,
+  li#jobThreeLocation.jobWhereBullets,
+  li#jobFourLocation.jobWhereBullets {
+    font-size: 8px;
+  }
+
+  li#jobOneYear.jobWhereBullets,
+  li#jobTwoYear.jobWhereBullets,
+  li#jobThreeYear.jobWhereBullets,
+  li#jobFourYear.jobWhereBullets {
+    font-size: 0.9rem;
+    font-family: "PoppinsLight";
+  }
+
+  .jobWhat {
+    font-size: 1.1rem;
+    /* padding-left: 20px; */
+    padding: 5px 20px 0px 30px;
+  }
+
+  .jobWhatBullets {
+    list-style: circle;
+    padding-right: 10px;
+  }
+
+  #twitch,
+  #alienware,
+  #dignitas {
+    font-size: 1rem;
+    margin: 0px;
+    padding-left: 5px;
+  }
+
+  #mainContentContact {
+    padding: 0px 30px 0px 20px;
+  }
+
+  #contactDescription {
+    margin: 0px;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px; */
+    /* font-size: 12px; */
+    font-family: "PoppinsReg";
+    text-align: center;
+    padding: 0px 15px 20px 15px;
+  }
+
+  #contactForm {
+    /* padding-left: 10px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  #myForm {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li.formInfo {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+
+  input#name,
+  input#email,
+  textarea#message {
+    font-family: "PoppinsLight";
+    font-size: 1.3rem;
+    width: 200px;
+  }
+
+  /* #submitBtn {
+    font-size: 10px;
+  } */
+
+  #contactLogoIcons {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding-bottom: 30px;
+  }
+
+  .contactLogos {
+    width: 50px;
+  }
+
+  #linkedIn {
+    opacity: 80%;
   }
 }
 
