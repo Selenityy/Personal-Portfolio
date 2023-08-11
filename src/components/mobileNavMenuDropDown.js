@@ -40,6 +40,7 @@ const menuDropDown = () => {
 const toggleMenuDisplay = () => {
   let allMenuButtons = document.querySelectorAll(".menuButtons");
   let img = document.getElementById("burgerMenu");
+  let menuOptions = document.getElementById("menuOptions");
   allMenuButtons.forEach((button) => {
     if (button.style.display === "none" || button.style.display === "") {
       button.style.display = "block";
@@ -47,6 +48,9 @@ const toggleMenuDisplay = () => {
       button.style.display = "none";
     }
   });
+
+  menuOptions.classList.toggle("show");
+
   if (img.classList.contains("burger")) {
     img.src = closeBtn;
     img.classList.remove("burger");
